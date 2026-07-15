@@ -10,9 +10,10 @@
     <style>
         body { 
             font-family: "Kanit", sans-serif;
-            line-height: 1.6; color: #333; 
-            color: #333; 
+            line-height: 1.6; 
+            color: #222323; 
             margin: 0;
+            background-color: #FFFDF4;
         }
 
         .hero-container { 
@@ -37,7 +38,7 @@
             left: 50%;
             transform: translate( 50%, -50%);
             text-align: right; 
-            color: rgb(34, 129, 202);
+            color: #222323;
             padding: 15px;
             border-radius: 8px;
             max-width: 450px;
@@ -53,25 +54,51 @@
             padding: 20px; 
         }
         h1 { 
-            color: #2c3e50; 
+            color: #41101B; 
             padding-bottom: 10px; 
         }
         h2 { 
-            color: #2980b9; 
+            color: #41101B; 
             margin-top: 30px; 
         }
         h3 { 
-            color: #16a085; 
+            color: #222323; 
         }
         a {
             text-decoration: none;
-            color: #2c3e50;
+            color: #41101B;
         }
-        .hero-img { 
-            width: 100%; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
+
+        .product-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 16px;
+        }
+
+        .product-table thead tr {
+            background-color: #41101B;
+            color: #FFFDF4;
+            text-align: left;
+        }
+
+        .product-table th, 
+        .product-table td {
+            padding: 12px 15px;
+        }
+
+        .product-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+            background-color: #FFFDF4;
+        }
+
+        .product-table tbody tr:last-of-type {
+            border-bottom: 2px solid #41101B;
+        }
+
+        .product-table tfoot {
+            background-color: #dddddd;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -86,14 +113,53 @@
     </div>
     <div class="content">
         <h2>เกี่ยวกับแคปซูลแฟชั่นของเรา</h2>
-        <p>ที่ FlexiWardrobe เราเชื่อว่าสไตล์ที่ยอดเยี่ยมควรจะเรียบง่าย แคปซูลแฟชั่นของเราได้รับการออกแบบมาเพื่อช่วยให้การเลือกเสื้อผ้าในแต่ละวันของคุณเป็นเรื่องง่าย โดยการจับคู่สินค้าคุณภาพเยี่ยมเข้าด้วยกันอย่างลงตัว</p>
+        <p>ที่ FlexiWardrobe เราเชื่อว่าสไตล์ที่ยอดเยี่ยมควรจะเรียบง่าย แคปซูลแฟชั่นของเราได้รับการออกแบบมาเพื่อช่วยให้การเลือกเสื้อผ้าในแต่ละวันของคุณเป็นเรื่องง่าย โดยการจับคู่สินค้าเข้าด้วยกันอย่างลงตัว</p>
 
         <h3>ทำไมต้อง FlexiWardrobe?</h3>
         <ul>
             <li><strong>คอลเลกชันที่คัดสรรแล้ว:</strong> สินค้าถูกจัดกลุ่มตามสไตล์และไลฟ์สไตล์ของคุณโดยเฉพาะ</li>
-            <li><strong>ชำระเงินง่ายและปลอดภัย:</strong> ระบบรองรับการชำระเงินผ่าน QR Code ได้ทันที</li>
+            <li><strong>ชำระเงินง่ายและปลอดภัย:</strong> ระบบรองรับการชำระเงินผ่าน QR Code</li>
             <li><strong>จัดการที่อยู่สะดวก:</strong> ระบบช่วยบันทึกและจัดการที่อยู่จัดส่งได้หลากหลายช่องทาง</li>
         </ul>
+        <h2>รายการสินค้า FlexiWardrobe</h2>
+
+        <table class="product-table">
+            <caption>ตารางแสดงรายละเอียดสินค้าในคลัง</caption>
+            <thead>
+                <tr>
+                    <th>รหัสสินค้า</th>
+                    <th>ชื่อสินค้า</th>
+                    <th>หมวดหมู่</th>
+                    <th>ราคา (บาท)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>FW-001</td>
+                    <td>เสื้อเชิ้ตคอตตอนสีขาว</td>
+                    <td>เสื้อผ้า</td>
+                    <td>590</td>
+                </tr>
+                <tr>
+                    <td>FW-002</td>
+                    <td>กางเกงชิโนสีน้ำเงิน</td>
+                    <td>กางเกง</td>
+                    <td>890</td>
+                </tr>
+                <tr>
+                    <td>FW-003</td>
+                    <td>กระเป๋าผ้าแคนวาส</td>
+                    <td>เครื่องประดับ</td>
+                    <td>350</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align:right;">รวมราคาประเมินสต็อก</td>
+                    <td>1,830</td>
+                </tr>
+            </tfoot>
+        </table>
 
         <h2>ขั้นตอนการสั่งซื้อ</h2>
         <ol>
